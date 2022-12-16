@@ -4,7 +4,6 @@ function calc(){
     let index = str.indexOf("\u221A");
     if (index !== -1) {
         str = str.replace(/√(\d+)/g, "Math.sqrt($1)");
-        console.log(str);
         d.innerHTML=eval(str);
     }else{
         d.innerHTML=eval(d.innerHTML);
